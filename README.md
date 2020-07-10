@@ -17,3 +17,4 @@
   * MySQL是应用最广泛，普及度最高的开源关系型数据库
   * mysql -uroot -p
   * show databases;
+  * CREATE DATABASE name;
