@@ -18,3 +18,22 @@
   * mysql -uroot -p
   * show databases;
   * CREATE DATABASE name;
+  * 增删改查 -> Insert, Delete, Update, Select
+  * net stop mysql80
+  * net start mysql80
+  * MySQL默认端口号3306, 80端口是HTTP常用端口
+* 重设root密码
+  * 创建一个TXT文件，定义修改密码的SQL语句
+  * ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+* MySQL配置文件
+  * 注意区分mac版mysql与Windows版的mysql配置文件扩展名不同:
+  * mac下: my.cnf
+  * windows下: my.ini
+  * 在my.ini文件中，我们可以设置各种MySQL的配置，例如字符集，端口号，目录地址等等
+* 本章总结：
+  * 掌握了windows平台上MySQL数据库的安装与管理，明白逻辑库，数据表与数据目录的对应关系
+  * 懂得MySQL数据库的常用参数设置：端口号，字符集， IP绑定，连接数等等
+  * 掌握MySQL数据库的用户管理，能创建用户并分配权限，设置远程登陆（%）
+  * 对于MySQL数据库上的忘记密码的账户，能重置该账户的密码信息
+  
+
