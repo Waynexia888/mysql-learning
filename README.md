@@ -66,5 +66,13 @@
   *     ......
   * )  [COMMENT = 注释];
   *
+* ![Table](images/table.png)<br/>
+  * INT UNSIGNED 无符号的整数（即非负数）
+  * PRIMARY KEY 主键
+  * VARCHAR(20)  字符串，最大不能超过20个字符
+  * NOT NULL 非空
+  * DATE 日期
+  * CHAR(1) 固定长度的字符，长度为1
+* CHAR(1) 固定长度的字符
   
   
