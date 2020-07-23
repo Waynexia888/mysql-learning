@@ -73,6 +73,9 @@
   * NOT NULL 非空
   * DATE 日期
   * CHAR(1) 固定长度的字符，长度为1
-* CHAR(1) 固定长度的字符
+* ![create table](images/create-table.png)<br/>
+  * 一个数据库中有很多逻辑空间，如果想在某个逻辑空间里添加表table，首先要USE test(使用test这个逻辑空间），然后CREATE TABLE 数据表(...)
+  * INSERT INTO student VALUE(1, "李强", "男", "1995-05-15", "13312345678", NULL);  -> 插入一条数据
+* ![table data](images/table-data.png)<br/>
   
   
