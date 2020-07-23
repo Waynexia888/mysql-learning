@@ -61,14 +61,13 @@
   * DROP DATABASE name;
 * 创建数据表
   * ![创建数据表](images/创建数据表.png)<br/>
-* ![Table](images/table.png)<br/>
+* ![create table](images/create-table.png)<br/>
   * INT UNSIGNED 无符号的整数（即非负数）
   * PRIMARY KEY 主键
   * VARCHAR(20)  字符串，最大不能超过20个字符
   * NOT NULL 非空
   * DATE 日期
   * CHAR(1) 固定长度的字符，长度为1
-* ![create table](images/create-table.png)<br/>
   * 一个数据库中有很多逻辑空间，如果想在某个逻辑空间里添加表table，首先要USE test(使用test这个逻辑空间），然后CREATE TABLE 数据表(...)
   * INSERT INTO student VALUE(1, "李强", "男", "1995-05-15", "13312345678", NULL);  -> 插入一条数据
 * ![table data](images/table-data.png)<br/>
@@ -77,4 +76,10 @@
   * DESC student -> 查看student这个表的结构详情信息
   * SHOW CREATE TABLE student -> 查看student这个表当初创建时候的sql语句
   * DROP TABLE student -> student这个数据表不想要了（注意这条语句的意思不是删除这个表的数据）
-  
+* 数据类型-数字
+  * ![数据类型-数字](images/数据类型-数字.png)<br/>
+  * FLOAT, DOUBLE有精度丢失的问题， 因此保存重要精准数据的时候（例如钱），使用DECIMAL类型
+* 数据类型-字符串
+  * ![数据类型-字符串](images/数据类型-字符串.png)<br/>
+* 数据类型-日期
+  * ![数据类型-日期](images/数据类型-日期.png)<br/>
