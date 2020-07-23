@@ -60,12 +60,7 @@
   * SHOW DATABASES;
   * DROP DATABASE name;
 * 创建数据表
-  * CREATE TABLE 数据表 (
-  *     列名1  数据类型 [约束] [COMMENT 注释],
-  *     列名2  数据类型 [约束] [COMMENT 注释],
-  *     ......
-  * )  [COMMENT = 注释];
-  *
+  * ![创建数据表](images/创建数据表.png)<br/>
 * ![Table](images/table.png)<br/>
   * INT UNSIGNED 无符号的整数（即非负数）
   * PRIMARY KEY 主键
@@ -77,5 +72,8 @@
   * 一个数据库中有很多逻辑空间，如果想在某个逻辑空间里添加表table，首先要USE test(使用test这个逻辑空间），然后CREATE TABLE 数据表(...)
   * INSERT INTO student VALUE(1, "李强", "男", "1995-05-15", "13312345678", NULL);  -> 插入一条数据
 * ![table data](images/table-data.png)<br/>
-  
+* ![table command](images/table-command.png)<br/>
+  * DESC student -> 查看student这个表的结构详情信息
+  * SHOW CREATE TABLE student -> 查看student这个表当初创建时候的sql语句
+  * DROP TABLE student -> student这个数据表不想要了（注意这条语句的意思不是删除这个表的数据）
   
