@@ -238,5 +238,8 @@
   * ![GROUP_CONCAT函数1](images/GROUP_CONCAT函数1.png)<br/>
   * 各种子句的执行顺序
   * ![各种子句的执行顺序1](images/各种子句的执行顺序1.png)<br/>
-  
-  
+* HAVING子句
+  * ![HAVING子句](images/HAVING子句.png)<br/>
+  * ![HAVING子句1](images/HAVING子句1.png)<br/>
+  * ![HAVING子句2](images/HAVING子句2.png)<br/>
+  * ![HAVING子句3](images/HAVING子句3.png)<br/>
