@@ -211,3 +211,32 @@
   * 数据统计分析（聚合函数，分组查询，HAVING子句）
   * 多表连接查询（内连接，外连接，以及多表查询的多种语法）
   * 子查询（单行子查询，多行子查询，WHERE子查询，FROM子查询，SELECT子查询）
+* 聚合函数
+  * ![聚合函数](images/聚合函数.png)<br/>
+  * SUM函数
+  * ![SUM函数](images/SUM函数.png)<br/>
+  * MAX函数
+  * ![MAX函数](images/MAX函数.png)<br/>
+  * MIN函数
+  * ![MIN函数](images/MIN函数.png)<br/>
+  * AVG函数
+  * ![AVG函数](images/AVG函数.png)<br/>
+  * COUNT函数
+  * ![COUNT函数](images/COUNT函数.png)<br/>
+  * ![COUNT函数1](images/COUNT函数1.png)<br/>
+* 分组查询
+  * 为什么要分组？
+  * ![为什么要分组](images/为什么要分组.png)<br/>
+  * 逐级分组
+  * ![逐级分组](images/逐级分组.png)<br/>
+  * 对SELECT子句的要求
+  * ![对SELECT子句的要求](images/对SELECT子句的要求.png)<br/>
+  * 对分组结果集再次做汇总计算
+  * ![对分组结果集再次做汇总计算](images/对分组结果集再次做汇总计算.png)<br/>
+  * GROUP_CONCAT函数
+  * ![GROUP_CONCAT函数](images/GROUP_CONCAT函数.png)<br/>
+  * ![GROUP_CONCAT函数1](images/GROUP_CONCAT函数1.png)<br/>
+  * 各种子句的执行顺序
+  * ![各种子句的执行顺序1](images/各种子句的执行顺序1.png)<br/>
+  
+  
