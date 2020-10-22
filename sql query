@@ -60,3 +60,74 @@ eg: display the names of all employees whose name does not contain 'M' anywhere
 SELECT ename
 FROM emp
 WHERE ename NOT LIKE '%M%';
+
+6. Pattern matching in SQL(Session 2), LIKE operator
+eg: display names of all employees whose name contains exactly 4 letter
+SELECT ename
+FROM emp
+WHERE ename LIKE '____';
+
+
+eg: display the names of employees whose name contains the 
+(i) second letter as 'L'
+(ii) fourth letter as 'M'
+
+SELECT ename
+FROM emp
+WHERE ename LIKE '_L%';
+
+SELECT ename
+FROM emp
+WHERE ename LIKE '___M%';
+
+eg: display the employee names and hire dates for the employees 
+joined in the month of December
+
+SELECT ename, hiredate
+FROM emp
+WHERE ename LIKE '%DEC%';
+
+
+eg: display the names of employees whose name contains exactly 2 'L's
+
+SELECT ename
+FROM emp
+WHERE ename LIKE '%LL%';
+
+eg: display the names of employees whose name starts with 'J' and ends with 'S'
+
+SELECT ename
+FROM emp
+WHERE ename LIKE 'J%S';
+
+7. display nth row in sql
+eg: display 2nd row of emp table; display 4th row of emp table
+SELECT * 
+FROM emp
+WHERE rownum <= 4
+minus
+SELECT * 
+FROM emp
+WHERE rownum <= 3
+
+// second way
+SELECT * 
+FROM (SELECT rownum r, ename, sal
+        FROM emp
+        WHERE r = 4;
+)
+
+SELECT * 
+FROM (SELECT rownum r, emp.*
+        FROM emp
+)
+WHERE r = 4;
+
+eg: display 2nd, 3rd, 7th records
+
+SELECT * 
+FROM (SELECT rownum r, emp.*
+        FROM emp
+)
+WHERE r in (2, 3, 7);
+
