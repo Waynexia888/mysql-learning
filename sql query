@@ -12,3 +12,20 @@ display the number of employees in each department
 SELECT DEPNO, count(*)
 FROM EMP 
 GROUP BY DEPNO;
+
+3. display alternate records in sql
+SELECT * 
+From EMP;
+
+SELECT rownum, EMPNO, SAL, ENAME 
+FROM EMP
+ORDER BY SAL DESC;
+
+// subquery
+SELECT *
+FROM (SELECT EMPNO, SAL, ENAME, rownum rn
+        FROM EMP
+        ORDER BY rn
+)
+WHERE rn % 2 != 0;
+
