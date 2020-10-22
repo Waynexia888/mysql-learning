@@ -29,3 +29,34 @@ FROM (SELECT EMPNO, SAL, ENAME, rownum rn
 )
 WHERE rn % 2 != 0;
 
+4. find duplicated values and its frequency of a column
+SELECT ename, count(*)
+FROM emp 
+GROUP BY ename;
+HAVING count(*) > 1;
+
+SELECT ename, count(*)
+FROM emp 
+GROUP BY ename;
+ORDER BY count(*);
+
+5. Pattern matching in SQL(Basics), LIKE operator
+eg: display the employee names whose name start with 'M'
+SELECT ename
+FROM emp
+WHERE ename LIKE 'M%';
+
+eg: display the employee names whose name ends with 'N'
+SELECT ename
+FROM emp
+WHERE ename LIKE '%N';
+
+eg: display the names of all employees having 'M' in any position in their name
+SELECT ename
+FROM emp
+WHERE ename LIKE '%M%';
+
+eg: display the names of all employees whose name does not contain 'M' anywhere
+SELECT ename
+FROM emp
+WHERE ename NOT LIKE '%M%';
