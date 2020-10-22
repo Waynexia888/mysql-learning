@@ -1,0 +1,14 @@
+1. find the second highest salary of an employee?
+SELECT max(SAL)
+FROM EMP
+WHERE SAL NOT IN (SELECT max(SAL) FROM EMP);
+
+2. Display the highest payed employees in each department
+SELECT DEPNO, max(SAL)
+FROM EMP 
+GROUP BY DEPNO;
+
+display the number of employees in each department
+SELECT DEPNO, count(*)
+FROM EMP 
+GROUP BY DEPNO;
